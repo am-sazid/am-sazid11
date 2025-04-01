@@ -275,20 +275,25 @@ section{
     animation: animate 1s linear infinite;
 }
 
-.img-hero{
+.img-hero {
     position: relative;
     animation: floatImage 4s ease-in-out infinite;
     animation-delay: 3s;
 }
 
-.img-hero img{
+.img-hero img {
     position: relative;
-    width: 400px;
-    height: auto;
+    width: 350px;
     z-index: 10;
+    border-radius: 20px; /* Optional: Adds rounded corners */
+    padding: 10px; /* Space between image and border */
+    background: linear-gradient(to bottom, #e6006d, #1d002c); /* Gradient Border */
+    display: block;
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
-.rotate-text{
+.rotate-text {
     position: absolute;
     top: 4%;
     left: -53px;
@@ -299,7 +304,7 @@ section{
     padding: 2rem;
 }
 
-.rotate-text span{
+.rotate-text span {
     position: relative;
     width: 442px;
     height: 442px;
@@ -310,7 +315,7 @@ section{
     overflow: hidden;
 }
 
-.rotate-text span::before{
+.rotate-text span::before {
     content: "";
     position: absolute;
     inset: 20px;
@@ -319,7 +324,7 @@ section{
     z-index: 1;
 }
 
-.rotate-text span i{
+.rotate-text span i {
     position: absolute;
     inset: 0;
     background: var(--gradient-color-bg);
@@ -327,14 +332,13 @@ section{
     animation: animate 2s linear infinite;
 }
 
-
-.rotate-text .text{
+.rotate-text .text {
     position: absolute;
     width: 490px;
     height: 490px;
     background: #f2f6fb;
     border-radius: 50%;
-    box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
     animation: rotateText 30s linear infinite;
 }
 
@@ -360,8 +364,13 @@ section{
 }
 
 .about .about-img .aboutHero{
-    width: 40vw;
-    height: auto;
+    position: relative;
+    width: 350px;
+    z-index: 10;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    padding: 10px; /* Space between image and border */
+    background: linear-gradient(to bottom, #e6006d, #d34dbd); /* Gradient Border */
+    display: block;
 }
 
 .about-img .ring{
@@ -1095,6 +1104,9 @@ footer{
     }
     .img-hero{
         margin-top: 3rem;
+    }
+    .img-hero img{
+        margin-left: 0;
     }
 }
 

@@ -93,19 +93,19 @@
         </div>
       </div>
       <div class="img-hero">
-        <img src="./am.png" alt="" />
+        <img src="./am.jpeg" alt="" />
         <div class="rotate-text">
           <div class="text">
             <p></p>
           </div>
-          <span><i></i></span>
+          <!-- <span><i></i></span> -->
         </div>
       </div>
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-        <img src="./sazid_1.png" alt="" class="aboutHero" />
+        <img src="./sazid.jpeg" alt="" class="aboutHero" />
         <div class="showcase-ring"></div>
       </div>
       <div class="about-content">
@@ -152,8 +152,12 @@
 
           <div class="content">
             <div class="text-box">
-              <p>SSC in Science</p>
+              <p>SSC in Electrical</p>
               <span>Mahespur govt pilot model high school</span>
+            </div>
+            <div class="text-box">
+              <p>Diploma in Computer Science</p>
+              <span> Govt. Graphic Arts Institute</span>
             </div>
             <div class="text-box">
               <p></p>
@@ -597,7 +601,10 @@
     </section>
 
     <footer>
-      <p>Copyright © 2024 by <span>A M SAZID </span> || All Right Reservd.</p>
+      <p>Copyright © <span id="year"></span> by <span>A M SAZID </span> || All Right Reservd.</p>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script> 
     </footer>
 
     <div id="progress">
